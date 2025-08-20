@@ -4,7 +4,7 @@ import sys
 
 """
 ####Input while start up as argument#####
-full_name = sys.argv[1]
+full_name = sys.argv[1] #filename is always the argv[0]
 
 in command prompt
 python3 .\\src\\user_input.py Asha (note:use one \\ instead)
