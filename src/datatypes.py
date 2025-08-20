@@ -1,5 +1,5 @@
 #scopes Local->Enclosing->Global->BuiltIn
-print(__file__)#python built in variable, can be used anywhere
+print(__file__)#python built in variable, used to print the filename
 
 a = 10
 b = 'Asha'
