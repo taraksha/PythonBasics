@@ -37,9 +37,9 @@ mylist.remove("Actual insert")
 print(mylist)
 mylist.pop() #removes last element
 print(mylist)
-mylist.pop(1) #removes last element
+mylist.pop(1) #removes element at the given position
 print(mylist)
-del mylist[1]
+del mylist[1] #deletes at the index
 print(mylist)
 del mylist #deletes the list. cant be accessed after that. Throws error
 mylist2.clear() #clears the contents
@@ -67,6 +67,7 @@ print(newfruits)
 editedfruits = [x if x != "banana" else "orange" for x in fruits]
 print(editedfruits)
 print("")
+
 #Sort
 sortlist = ["apple", "banana", "cherry", "kiwi", "mango","KIWI"]
 sortlist.sort() #sorts from Uppercase to lowercase
@@ -77,7 +78,19 @@ sortlist.sort(reverse=True)
 print(sortlist)
 sortlist.reverse()
 print(sortlist)
-#TUPLE is a collection which is ordered and unchangeable. Allows duplicate members.
+
+print(sortlist.count("kiwi"))# counts the no of occurances
+
+#join
+joinedlist = fruits+sortlist
+print(joinedlist)
+joinedlist.clear()
+joinedlist=fruits.copy()
+print(joinedlist)
+
+joinedlist = sortlist[:]
+print(joinedlist)
+
 
 #Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
 
