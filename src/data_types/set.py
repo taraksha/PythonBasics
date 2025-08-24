@@ -1,0 +1,1 @@
+# Set is a collection which is unordered, unchangeable*, and un indexed. No duplicate members.{}
