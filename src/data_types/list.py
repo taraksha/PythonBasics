@@ -90,8 +90,3 @@ print(joinedlist)
 
 joinedlist = sortlist[:]
 print(joinedlist)
-
-
-
-
-#Dictionary is a collection which is ordered** and changeable. No duplicate members.
