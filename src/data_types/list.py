@@ -1,6 +1,6 @@
 #LIST uses [] ordered, mutable, allows duplicates, any datatype
 from typing import List
-
+# always use copy() to copy the contents of the datatype = will only copy the reference hence it will change as the source changes
 mylist = ["apple", 1 , "cherry"]
 mylist2 = list(["using","constructor"])
 
@@ -87,6 +87,7 @@ print(joinedlist)
 joinedlist.clear()
 joinedlist=fruits.copy()
 print(joinedlist)
+
 
 joinedlist = sortlist[:]
 print(joinedlist)
