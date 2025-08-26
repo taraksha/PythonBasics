@@ -60,3 +60,8 @@ print(initial)
 
 corrected_name =  " ".join(word[0].upper()+word[1:] for word in name.split())
 print(corrected_name)
+
+print("To capitalize first word alone:",name.capitalize())
+print("Swap case:",name.swapcase())
+print("Title:",name.title())
+
