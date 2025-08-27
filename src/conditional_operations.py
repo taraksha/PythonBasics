@@ -29,3 +29,23 @@ match day:
   case _:
     print("No match")
 """
+
+#LOOPS
+#while
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break #continue - to skip to the begining
+    i += 1
+
+i = 6
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("i is no longer less than 6")  #i think this else is unnecessary, wont be executed if there is a break
+
+#For : can even iterate through strings,range
+for x in range(2, 30, 3):
+    print(x) #Note range is  2 to 29(in general 0 to n-1)
