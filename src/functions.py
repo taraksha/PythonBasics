@@ -59,3 +59,32 @@ combined_args(5, 6, c = 7, d = 8)
 """
 
 #Recursion
+#Quick Sort
+
+def quick_sort(list,left_pointer,right_pointer ):
+    if left_pointer >= right_pointer:
+        return
+    pivot = list[right_pointer]
+    seperator_pointer = partition(list,pivot,left_pointer,right_pointer)
+    swap(list,right_pointer,seperator_pointer)
+    quick_sort(list,left_pointer,seperator_pointer-1)
+    quick_sort(list,seperator_pointer+1,right_pointer)
+
+def partition(list,pivot,left_pointer,right_pointer):
+    while(left_pointer < right_pointer):
+        while(pivot >= list[left_pointer] and left_pointer < right_pointer):
+            left_pointer += 1
+        while(pivot <= list[right_pointer] and left_pointer < right_pointer):
+            right_pointer -= 1
+        swap(list,left_pointer,right_pointer)
+    return left_pointer
+
+def swap(list,  first, second):
+    temp = list[first]
+    list[first] = list[second]
+    list[second] = temp
+
+list = [2,3,1,343,56,5,4]
+print("Quick sort:",list)
+quick_sort(list,0,len(list)-1)
+print(list)
